@@ -1,0 +1,44 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "axios": "^0.18.0",
+    "bootstrap": "^3.3.7",
+    "cheerio": "^1.0.0-rc.2",
+    "html-to-react": "^1.3.3",
+    "jquery": "^3.3.1",
+    "mysql": "^2.16.0",
+    "owl.carousel": "^2.3.4",
+    "react": "^16.5.2",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.5.2",
+    "react-fontawesome": "^1.6.1",
+    "react-mdl": "^1.11.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "request": "^2.88.0",
+    "url-parse": "^1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "css-loader": "^1.0.1",
+    "owl-carousel": "^1.0.0",
+    "style-loader": "^0.23.1"
+  }
+}
