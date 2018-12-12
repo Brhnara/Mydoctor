@@ -73,6 +73,7 @@ class App extends Component {
       console.log(allReview);
 
     });
+   
   };
 
   
@@ -95,6 +96,19 @@ class App extends Component {
 
     return post(url, this.allReview, config);
   };
+  postName = () => {
+    const url = "http://localhost:8080/demo/doctor_name/";
+
+    const config = {
+      headers: {
+        "content-type": "application/json"
+      }
+      
+    };
+
+    return post(url, document.getElementById("kword").value, config);
+  };
+
 
   handleClick = () => {
     this.getReviews();
@@ -109,6 +123,7 @@ class App extends Component {
   }
 
   render() {
+   
     return (
       <div className="App">
 
@@ -122,7 +137,7 @@ class App extends Component {
     <form action="#">
       <input type="text" placeholder="Search.." name="search" id="kword"/>
       <button type="submit" onClick={this.getReviews}><i className="fa fa-search"></i></button>
-      <button type="submit" onClick={this.onSendComments}><i className="fa fa-sticky-note-o"></i></button>
+      <button type="submit" onClick={this.postName}><i className="fa fa-sticky-note-o"></i></button>
     </form>
   </div>
 </div>
@@ -145,25 +160,13 @@ class App extends Component {
     <h2><span>About Us</span></h2>
     <div className="section about">
       <h3>Hello and welcome to our website!</h3>
-      <p></p>
+      <p>We are here to help you to find your perfect doctor</p><i class="fa fa-heartbeat" style={{fontSize:'48px',color:'red'}}></i>
     </div>
     </div>
     </div>
    
-    <div>
-           <ul>
-        {allReview.map(country => (
-          <li>
-            {country.url},{country.url  },{country.comment};
-          </li>
-        ))}
-      </ul>
-      
-      </div>
+    
 
-    <ul>
-     {this.reviewItems()}
-     </ul>
     
     
 <div id="footer">
