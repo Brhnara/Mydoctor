@@ -73,7 +73,7 @@ class App extends Component {
       console.log(allReview);
 
     });
-   
+   this.postName();
   };
 
   
@@ -134,11 +134,11 @@ class App extends Component {
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
   <div >
-    <form action="#">
+    
       <input type="text" placeholder="Search.." name="search" id="kword"/>
       <button type="submit" onClick={this.getReviews}><i className="fa fa-search"></i></button>
-      <button type="submit" onClick={this.postName}><i className="fa fa-sticky-note-o"></i></button>
-    </form>
+      
+    
   </div>
 </div>
     <div id="navigation">
@@ -165,7 +165,7 @@ class App extends Component {
     </div>
     </div>
    
-    
+    <span>{allReview}</span>
 
     
     
