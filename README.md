@@ -1,1 +1,1 @@
-Sample web application with React Native
+ web application with React Native
